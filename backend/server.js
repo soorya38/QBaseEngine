@@ -4,6 +4,8 @@ const user=require("./models/user")
 const userRouter=require("./routes/userroute")
 const app=express()
 
+app.use(express.json());
+
 app.use("/api",userRouter);
 
 app.get("/home",(req,res)=>{

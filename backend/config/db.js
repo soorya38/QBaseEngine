@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config()
 
 const {Pool}=require("pg")
 
@@ -17,4 +17,4 @@ pool.connect()
     })
 
 
-module.exports=pool;
+module.exports=pool

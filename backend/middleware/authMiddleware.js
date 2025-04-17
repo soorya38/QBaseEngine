@@ -1,11 +1,11 @@
 const jwt=require("jsonwebtoken")
-require('dotenv').config();
+require('dotenv').config()
 
 const auth=(req,res,next)=>{
     const authheader=req.header("Authorization")
 
     if(!authheader){
-        return res.status(401).send("Token missing");
+        return res.status(401).send("Token missing")
     }
 
     const token=authheader.split(" ")[1]
@@ -16,12 +16,12 @@ const auth=(req,res,next)=>{
 
     try{
         const decoded=jwt.verify(token,process.env.secret_key)
-        req.user=decoded;
+        req.user=decoded
         next()
     }catch(e){
-        console.log(e);
+        console.log(e)
         res.status(400).send(e)
     }
 }
 
-module.exports=auth;
+module.exports=auth

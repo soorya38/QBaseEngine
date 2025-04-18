@@ -15,10 +15,10 @@ The system not only streamlines traditional workflows for question handling but 
   Add, edit, delete, and categorize questions by subject, topic, type, and difficulty level.
 
 - **AI-Powered Question Generation**  
-  Automatically generate multiple-choice, descriptive, and true/false questions from raw text using NLP models such as T5, GPT, and BERT.
+  Automatically generate multiple-choice, descriptive, and true/false questions from raw text using NLP models.
 
 - **Question Paper Composer**  
-  Assemble and export customized question papers based on filters like topic, type, and difficulty, with output formats including PDF and DOCX.
+  Assemble and export customized question papers based on filters like topic, type, and difficulty, with multiple output formats.
 
 - **Advanced Search and Filtering**  
   Retrieve questions using keywords, tags, or metadata filters to improve accessibility and organization.
@@ -39,21 +39,8 @@ The system not only streamlines traditional workflows for question handling but 
 - **Difficulty Classification**  
   Assign complexity ratings using linguistic and semantic analysis.
 
-- **Semantic Suggestions**  
-  Provide intelligent recommendations for related or follow-up questions.
-
 - **Text Summarization**  
   Optionally condense long-form text inputs prior to question generation to improve output precision.
-
----
-
-#### Technology Stack
-
-- **Frontend**: React.js, TypeScript, Tailwind CSS  
-- **Backend**: Node.js (REST APIs), Python (for AI and NLP services)  
-- **Database**: MongoDB or PostgreSQL  
-- **AI/NLP Frameworks**: Hugging Face Transformers, spaCy, NLTK  
-- **Additional Tools**: JWT Authentication, Docker, Redis, jsPDF
 
 ---
 
